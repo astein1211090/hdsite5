@@ -5,50 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true%>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= render '/layouts/shim' %>
 
-    <!-- Compiled and minified CSS -->
 
   </head>
 
   <body>
-    <div class="navbar-fixed">
-      <nav class="indigo" role="navigation">
-        <div class="nav-wrapper container">
-          <div class="brand-logo"><%= link_to "HealthDirectly",'#',id:"logo"%></div>
-          <ul class="right hide-on-med-and-down" id="nav-mobile">
-            <li><%= link_to "Home", '#' %></li>
-            <li><%= link_to "Help", '#' %></li>
-            <li><%= link_to "Log In", '#' %></li>
-          </ul>
-            </div>
-      </nav>
-    </div>      
+    <%= render '/layouts/header' %>
+
           
           
-    <ul id="mobile-menu" class="sidenav">
-      <li><%= link_to "Home", '#' %></li>
-      <li><%= link_to "Help", '#' %></li>
-      <li><%= link_to "Log In", '#' %></li>
-    </ul>
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
     <div class="container">
       <%= yield %>
+      <%= render '/layouts/footer' %>
     </div>
-
-
-    
-    <script>
-      $(document).ready(function(){
-        $('.sidenav').sidenav();
-      })
-    </script>
   </body>
 </html>
