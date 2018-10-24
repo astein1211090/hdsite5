@@ -11,11 +11,13 @@ gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.2.0'
 gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
+gem 'jquery-ui-rails'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'sprockets-rails'
+gem 'font-awesome-sass', '~> 4.4.0'
 gem 'bcrypt', '3.1.12'
 
 group :development, :test do
@@ -40,6 +42,7 @@ end
 
 group :production do
   gem 'pg', '0.18.4'
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
