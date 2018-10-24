@@ -2,7 +2,7 @@
 <h1>Log in</h1>
 
 <div class="row">
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col m6 offset-m3">
     <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :email %>
@@ -17,7 +17,7 @@
         <span>Remember me on this computer</span>
       <% end %>
 
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <%= f.submit "Log in", class: "btn waves-effect waves-light red lighten-1" %>
     <% end %>
 
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>

@@ -1,12 +1,150 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
-  <h2>
-    This is the home page for the 
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application
-  </h2>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center red-text text-lighten-1">A health benefit that employees truly love</h1>
+      <div class="row center">
+        <h6 class="header col s12 light">HealthDirectly connects employees with a new kind of primary care with Direct 
+        Primary Care physicians near them. This reduces costs and helps employees become healthier, happier, 
+        and more productive</h5>
+      </div>
+      <div class="row center">
+        <a href=<%= signup_path %> id="download-button" class="btn-large waves-effect waves-light red lighten-1">Get Started</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div class="parallax"><img src="/headerback.jpg" alt="Unsplashed background img 1"></div>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+
+<div class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="/doctor.png" width="100"></h2>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="/rocket.png" width="100"></h2>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="/exercise.png" width="100"></h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col s12 m4">
+        <h5 class="center">Better managed chronic conditions</h5>
+      </div>
+      <div class="col s12 m4">
+        <h5 class="center">Satisfaction through the roof</h5>
+      </div>
+      <div class="col s12 m4">
+        <h5 class="center">Increased productivity</h5>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col s12 m4">
+        <p class="light">On average, >50% of employer healthcare costs are driven by  less than 5% of employees. 
+        Unmanaged chronic conditions drive expensive, episodic events including emergency room visits and 
+        overnight hospital stays.</p>
+        <p class="light">Direct primary care patients spend more time with a doctor who truly knows them, driving increased 
+        engagement and better management of the patients' health.Union County, NC saved $1.28m on healthcare costs (or $121 per 
+        covered life per month) over just 12 months when they switched to direct primary care.</p>
+      </div>
+      <div class="col s12 m4">
+        <p class="light">Our flat fee model does away with wait times and co-pays, aligns incentives between doctors and patients, 
+        and gives you unlimited access to a primary care physician when you need it.</p>
+        <p class="light">With no need to go through insurance, you can chat with your doctor in the way that works for you, whether 
+        in-person, by phone, text, or email. Our physicians do not have "referral quotas" for specialist appointments. We make sure decisions 
+        are based on your health, not on a hospital's bottom line.</p>
+      </div>
+      <div class="col s12 m4">
+        <p class="light">The average wait time to see a primary care doctor is 24 days. This leads to more sick days and unhappy employees. 
+        Because we're able to offer same day appointments to >90% of those who request it, we minimize time off and keep your employees 
+        fighting fit.</p>
+        <p class="light">Approximately 25% of Americans do not even have a primary care doctor. This leads to poorer health and more nasty 
+        surprises. We make sure every employee is paired with an experienced doctor who will help to proactively manage health and identify 
+        issues early on.</p>
+      </div>
+
+    </div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h6 class="header col s12 light">We save employers 15% or more on healthcare costs, while making employees happier and healthier.</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="/doctor2.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="/love.png" width="100"></h2>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="/cardiogram.png" width="100"></h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col s12 m6">
+        <h5 class="center">Engagement comes included</h5>
+      </div>
+      <div class="col s12 m6">
+        <h5 class="center">Data driven primary care</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m6">
+        <p class="light">We'll launch a world-class marketing campaign to encourage employees to find out 
+        how much they'll benefit from unlimited access to primary care and provide them with free tools to communicate with their new physician.</p>
+      </div>
+      <div class="col s12 m6">
+        <p class="light">You'll receive detailed reports on your enrollees so you can see how our direct model works. We'll also use this data to 
+        pinpoint those at risk for chronic conditions and provide additional care and support.</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light"></h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="/colleagues.jpg" alt="Unsplashed background img 3"></div>
+</div>

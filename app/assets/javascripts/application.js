@@ -12,8 +12,12 @@
 //
 //= require jquery
 //= require bootstrap
+//= require materialize
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
 
-
+$(document).ready(function(){
+  $('.parallax').parallax();
+  $('.sidenav').sidenav();
+});
