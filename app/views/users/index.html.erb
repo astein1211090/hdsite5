@@ -1,0 +1,12 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+
+<ul class="users">
+  <!- compact code to render users - infers existence of _user.html.erb from name ->
+  <%= render @users %>
+</ul>
+
+<%= will_paginate %>
