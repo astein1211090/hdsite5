@@ -2,26 +2,63 @@
   <%= form_for(@user) do |f| %>
     <%= render 'shared/error_messages', object: @user %>
 
-    <div class="row">
-      <%= f.label :name %>
-      <%= f.text_field :name, class: 'form-control' %>
-    </div>
+    <div class="section">
+      <div class="row">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control' %>
+      </div>
 
-    <div class="row">
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
-    </div>
+      <div class="row">
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
+      </div>
 
-    <div class="row">
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <div class="row">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
+      </div>
+
+      <div class="row">
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="section">
+      <div class="row">
+        <%= f.label :age %>
+        <%= f.number_field :age, class: 'form-control' %>
+      </div>
+
+      <div class="row">
+        <%= radio_button_tag(:gender, "male") %>
+        <%= label_tag(:gender_male, "Male") %>
+        <%= radio_button_tag(:age, "female") %>
+        <%= label_tag(:gender_female, "Female") %>
+      </div>
+
+      <div class="row">
+        <%= f.label :address%>
+        <%= f.text_field :address, class: 'form-control' %>
+      </div>
+
+      <div class="row">
+        <%= f.label :city%>
+        <%= f.text_field :city, class: 'form-control' %>
+      </div>
+
+      <div class="row">
+        <%= f.label :state%>
+        <%=select_tag 'State', options_for_select(us_states),:name=>"state",:id=>"state"%>
+      </div>
+
+      <div class="row">
+        <%= f.label :zipcode%>
+        <%= f.number_field :zipcode, class: 'form-control' %>
+      </div>
     </div>
     
-    <div class="row">
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
-    </div>
     <div class="center row"><%= f.submit yield(:button_text), class: "btn waves-effect waves-light red lighten-1 white-text" %></div>
   <% end %> 
 </div>
-

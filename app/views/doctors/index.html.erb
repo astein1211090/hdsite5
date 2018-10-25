@@ -1,0 +1,34 @@
+<div class="row">
+  <% @doctors.each do |doctor| %>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src='/<%= doctor.image_name %>'>
+          </div>
+          <div class="card-content">
+            
+            <div class="section"><h5 class="center"><%= doctor.name %></h5></div>
+            <div class="divider"></div>
+            <div class="section">
+              <p><strong>Gender: </strong><%= doctor.gender %></p>
+              <p><strong>Address: </strong><%= doctor.address %></p>
+              <p><strong>City: </strong><%= doctor.city %></p>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+              <h6>Distance</h6>
+              <p>From office: 2.0 miles</p>
+              <p>From home: 2.0 miles</p>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href='#'>More Information</a>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>
+
+
+
+<%= link_to 'New Doctor', new_doctor_path %>

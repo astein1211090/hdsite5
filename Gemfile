@@ -18,6 +18,8 @@ gem 'bcrypt', '3.1.12'
 gem 'faker', '1.7.3'
 gem 'will_paginate', '3.1.6'
 gem 'materialize-sass', '~> 1.0.0'
+gem 'flatpickr_rails'
+gem 'simple_form'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'

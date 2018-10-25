@@ -13,10 +13,15 @@
 //= require jquery
 //= require materialize
 //= require rails-ujs
+//= require flatpickr
 //= require turbolinks
 //= require_tree .
 
 $(document).ready(function(){
   $('.parallax').parallax();
   $('.sidenav').sidenav();
+  $('#flatpickr-input').flatpickr();
 });
+
+
+
