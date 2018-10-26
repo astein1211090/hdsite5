@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= jquery_ujs
+//= require jquery.turbolinks
 //= require materialize
 //= require rails-ujs
 //= require flatpickr
-//= require turbolinks
 //= require_tree .
 
 $(document).ready(function(){
