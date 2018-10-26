@@ -20,6 +20,7 @@ gem 'materialize-sass', '~> 1.0.0'
 gem 'flatpickr_rails'
 gem 'simple_form'
 gem 'jquery-turbolinks'
+gem 'rubocop'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
