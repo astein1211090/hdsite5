@@ -31,6 +31,16 @@ $(document).ready(function(){
       duration: 100,
     }
     );
+  $('.materialboxed').materialbox();
+  $('.tabs').tabs();
+  $('.datepicker').datepicker({
+      disableWeekends: true
+  });
+  $('.tooltipped').tooltip();
+  $('.scrollspy').scrollSpy();
+  $('.dropdown-trigger').dropdown();
+  $('.fixed-action-btn').floatingActionButton();
+  $('select').material_select();
 });
 
 autoplay()   

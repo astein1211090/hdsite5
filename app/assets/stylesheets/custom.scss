@@ -7,7 +7,25 @@ $secondary-color: color("yellow", "base") !default;
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Montserrat:600|Nunito+Sans|Questrial');
 
-
+[type="radio"]:checked + span:after,
+ 
+[type="radio"].with-gap:checked + span:before,
+ 
+[type="radio"].with-gap:checked + span:after {
+ 
+  border: 2px solid #ef5350;
+ 
+}
+ 
+ 
+ 
+[type="radio"]:checked + span:after,
+ 
+[type="radio"].with-gap:checked + span:after {
+ 
+  background-color: #ef5350;
+ 
+}
 
 
 @media only screen and (max-width : 992px) {

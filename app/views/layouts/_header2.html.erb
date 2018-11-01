@@ -3,12 +3,36 @@
     <div class="nav-wrapper white">
       <div class="container"><a href="#" class="brand-logo blue-text text-darken-4">HealthDirectly</a></div>
       <ul id="nav-mobile" class="right hide-on-med-and-down blue-text">
-        <li><a href="sass.html">ABOUT</a></li>
-        <li><a href="badges.html">OUR SOLUTION</a></li>
-        <li><a href="collapsible.html">OUTCOMES</a></li>
-        <li><a href="collapsible.html">CONTACT</a></li>
-        <li><a href="collapsible.html" class="btn pink white-text waves-effect waves-light">Request Info</a></li>
-        <li><a href="collapsible.html">SIGN IN</a></li>
+        <li><%= link_to "ABOUT", "#{root_path}#about" %></li>
+        <li><%= link_to "OUR SOLUTION", "#{root_path}#solution" %></li>
+        <li><%= link_to "OUTCOMES", "#{root_path}#testimonials" %></li>
+        <% if logged_in? %>
+          <li><%= link_to "CONTACT", "#{contact_path}" %></li>
+          <a class='dropdown-trigger btn-floating btn-large waves-effect waves-light pink' href='#' data-target='dropdown1'>
+            <i class="large material-icons">account_box</i>
+          </a>
+
+          <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><%= link_to "Profile", current_user %></li>
+            <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+            <li class="divider"></li>
+            <li>
+              <%= link_to "Log out", logout_path, method: :delete %>
+            </li>
+          </ul>
+
+        <% else %>
+          <li><a href=<%= contact_path %> class="btn pink white-text waves-effect waves-light">Request Info</a></li>
+          <li><li><%= link_to "SIGN IN", login_path %></li></li>
+          <li><li><%= link_to "SIGN UP", new_user_path %></li></li>
+
+        <% end %>
+        
+        
+        
+        
+        
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger pink-text"><i class="material-icons">menu</i></a>
     </div>

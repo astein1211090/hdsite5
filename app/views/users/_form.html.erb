@@ -32,13 +32,6 @@
       </div>
 
       <div class="row">
-        <%= radio_button_tag(:gender, "male") %>
-        <%= label_tag(:gender_male, "Male") %>
-        <%= radio_button_tag(:age, "female") %>
-        <%= label_tag(:gender_female, "Female") %>
-      </div>
-
-      <div class="row">
         <%= f.label :address%>
         <%= f.text_field :address, class: 'form-control' %>
       </div>
@@ -49,16 +42,11 @@
       </div>
 
       <div class="row">
-        <%= f.label :state%>
-        <%=select_tag 'State', options_for_select(us_states),:name=>"state",:id=>"state"%>
-      </div>
-
-      <div class="row">
         <%= f.label :zipcode%>
         <%= f.number_field :zipcode, class: 'form-control' %>
       </div>
     </div>
     
-    <div class="center row"><%= f.submit yield(:button_text), class: "btn waves-effect waves-light red lighten-1 white-text" %></div>
+    <div class="center row"><%= f.submit yield(:button_text), class: "btn waves-effect waves-light pink white-text" %></div>
   <% end %> 
 </div>
