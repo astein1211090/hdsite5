@@ -76,3 +76,93 @@ footer.page-footer {
 .card {
   height: 780px;
 }
+
+.blue-text li a{
+  color: #0d47a1;
+ }
+
+
+nav {
+  height: 100px;
+  line-height: 100px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  height: 100px;
+  line-height: 100px;
+}
+
+nav .button-collapse i {
+  height: 100px;
+  line-height: 100px;
+}
+
+nav .brand-logo { 
+  font-size: 2 rem; 
+}
+
+@media only screen and (min-width: 601px){
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+      height: 100px;
+      line-height: 100px;
+  }
+}
+
+.hdblue-text {
+  color: #5BA8DD;
+}
+.hdred-text {
+  color: #F15F75;
+}
+.hdgold-text {
+  color: #F1B676;
+}
+
+.hdblue {
+  background-color: #5BA8DD;
+}
+.hdred {
+  background-color: #F15F75;
+}
+.hdgold {
+  background-color: #F1B676;
+}
+
+.home_header {
+  height: 1000px;
+  width: 100%;
+  background-image: url(https://uploads-ssl.webflow.com/5af2f6c042cd7abaee458b4e/5b51fe4aef1d585bcf489327_hero_mockup2.png);
+  background-repeat: no-repeat;
+  background-size: auto 1000px;
+  background-position: 50% 47%;
+  background-attachment: scroll;
+  direction: ltr;
+  overflow: visible;
+  position: static;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .home_header {
+    height: 1000px;
+    background-size: auto 1000px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home_header {
+    height: 500px;
+    background-image: none;
+    background-color: #e8e6e8;
+  }
+}
+
+.logos-list {
+  background-color: #e8e6e8;
+  height: 200px;
+}
+
+.testimonials {
+  background-color: #5BA8DD;
+  height: 400px;
+}
